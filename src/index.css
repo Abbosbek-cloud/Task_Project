@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+.first-loader {
+  top: 0;
+  left: 0;
+  background: #051a37;
+  position: relative;
+  z-index: 9999;
+}
