@@ -18,11 +18,6 @@ const Details = () => {
       dispatch(setSelected(res.data));
     });
   }, [movieId]);
-  const [year] = selected.release_date.split("-").slice(0, 1);
-  console.log(year);
-
-  console.log(movieId);
-  console.log(selected);
   return (
     <>
       {!selected ? (
@@ -53,9 +48,8 @@ const Details = () => {
               </div>
             </div>
           </div>
-          <div className="w-3/4 mx-auto flex justify-between">
+          <div className="w-3/4 mx-auto">
             <p>{selected.tagline}</p>
-            <p>{year}</p>
           </div>
 
           <div className="w-3/4 mx-auto">
